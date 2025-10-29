@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(10, 10, 25, 0.7);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  animation: slideDown 1s ease forwards;
+  font-family: 'Poppins', sans-serif;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Centered navigation links */
+.nav-links {
+  display: flex;
+  gap: 2.8rem;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: #e0e0e0;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-links li a:hover {
+  color: #ffffff;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+  box-shadow: 0 0 8px #00c6ff;
+}
+
+/* Contact button - Top right */
+.contact-link {
+  position: absolute;
+  right: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none;
+  color: #1a1a1a;
+  background: #eaeaea;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+  transition: all 0.25s ease;
+  border: 1px solid transparent;
+}
+
+.contact-link:hover {
+  background: transparent;
+  color: #eaeaea;
+  border: 1px solid #eaeaea;
+  transform: translateY(-50%) scale(1.05);
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    height: 60px;
+    padding: 0 1.5rem;
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+  }
+
+  .nav-links li a {
+    font-size: 0.95rem;
+  }
+
+  .contact-link {
+    right: 1.5rem;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* ✅ Mobile view (row but compact) */
+@media (max-width: 768px) {
+  .navbar {
+    height: 55px;
+    padding: 0 1rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .nav-links li a {
+    font-size: 0.85rem;
+    letter-spacing: 0.2px;
+  }
+
+  .contact-link {
+    right: 0.8rem;
+    padding: 0.4rem 0.9rem;
+    font-size: 0.8rem;
+    border-radius: 6px;
+  }
+}
+
+/* ✅ Small mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    height: 50px;
+    padding: 0 0.6rem;
+  }
+
+  .nav-links {
+    gap: 0.8rem;
+  }
+
+  .nav-links li a {
+    font-size: 0.75rem;
+  }
+
+  .contact-link {
+    right: 0.1rem;
+    padding: 0.12rem 0.2rem;
+    font-size: 0.30rem;
+  }
+}

@@ -1,0 +1,131 @@
+.contact-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #001f3f, #000);
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.contact-section h2 {
+  color: #00bfff;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #00bfff;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+  resize: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #00e0ff;
+  background-color: #00e0;
+}
+
+button[type="submit"] {
+  padding: 12px;
+  background-color: #00bfff;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: greenyellow;
+  transform: scale(1.05);
+}
+
+.thankYou {
+  font-size: 1.3rem;
+  color: #00ffcc;
+  margin-top: 20px;
+}
+
+.error {
+  color: #ff6666;
+  margin-top: 15px;
+}
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 40px 15px;
+  }
+
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+
+  .contact-form {
+    max-width: 400px;
+    gap: 0.8rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+
+  button[type="submit"] {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 30px 10px;
+  }
+
+  .contact-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .contact-form {
+    max-width: 320px;
+    gap: 0.6rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+
+  button[type="submit"] {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .thankYou {
+    font-size: 1.1rem;
+  }
+}
+
+  

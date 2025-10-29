@@ -1,0 +1,141 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.certificates-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-top: 100px; 
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.certificates-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  padding: 20px;
+}
+
+.certificates-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #00bfff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+}
+
+.cert-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cert-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 25px;
+  text-align: left;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 191, 255, 0.3);
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+}
+
+.cert-info h3 {
+  font-size: 1.3rem;
+  color: #bbb;
+  margin-bottom: 8px;
+}
+
+.cert-info p {
+  font-size: 0.95rem;
+  color: #bbb;
+  margin-bottom: 15px;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+  background-color: #00bfff;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: greenyellow;
+  transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .certificates-title {
+    font-size: 1.6rem;
+  }
+
+  .cert-card {
+    max-width: 160px;
+    padding: 9px;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+  .certificates-section {
+    padding: 80px 10px 50px;
+  }
+
+  .certificates-title {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+  }
+
+  .cert-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px;
+  }
+
+  .cert-card {
+    max-width: 150px;
+    padding: 8px;
+  }
+
+  .cert-info h3 {
+    font-size: 0.6rem;
+  }
+
+  .cert-info p {
+    font-size: 0.6rem;
+  }
+
+  .download-btn {
+    font-size: 0.65rem;
+    padding: 3px 7px;
+  }
+}
