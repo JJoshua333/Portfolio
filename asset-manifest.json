@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.2a95561e.css",
+    "main.js": "/portfolio/static/js/main.ced8d1dd.js",
+    "static/media/bg-img3.jpg": "/portfolio/static/media/bg-img3.094d26c368d4b2974d87.jpg",
+    "static/media/skill-bg.jpg": "/portfolio/static/media/skill-bg.7bb695ccfa46332bfb1d.jpg",
+    "static/media/profile.jpg": "/portfolio/static/media/profile.d767e5c1f357e0c7dc4f.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.2a95561e.css.map": "/portfolio/static/css/main.2a95561e.css.map",
+    "main.ced8d1dd.js.map": "/portfolio/static/js/main.ced8d1dd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a95561e.css",
+    "static/js/main.ced8d1dd.js"
+  ]
+}
