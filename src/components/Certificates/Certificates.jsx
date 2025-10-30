@@ -31,6 +31,14 @@ function Certificates() {
       file: "Hands-on_AI.pdf"
     }
   ];
+    const handleDownload = (file) => {
+    const link = document.createElement("a");
+    link.href = `${process.env.PUBLIC_URL}/assets/Certificates/${file}`;
+    link.download = file;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <section
@@ -50,14 +58,7 @@ function Certificates() {
                 <h3>{cert.title}</h3>
                 <p>Issued by: Authorized Institute</p>
               </div>
-            <a
-              href={`${process.env.PUBLIC_URL}/assets/Certificates/${cert.file}`}
-              download
-              target="_blank"
-              rel="noopener noreferrer"
-              >
-                Download
-              </a>
+                 <button onClick={() => handleDownload(cert.file)}>Download</button>
                 </div>
           ))}
         </div>
