@@ -7,28 +7,28 @@ function Certificates() {
   const certificates = [
     {
       title: "Introduction to Artificial Intelligence",
-      file: "/assets/Certificates/AI_Certificate.pdf",
+      file: process.env.PUBLIC_URL +"/assets/Certificates/AI_Certificate.pdf",
     },
     {
       title: "Artificial Intelligence: Types of Artificial Intelligence",
-      file: "/assets/Certificates/AI_and_types.pdf",
+      file: process.env.PUBLIC_URL +"/assets/Certificates/AI_and_types.pdf",
     },
     {
       title:
         "International Conference On Recent Trends in Advanced Computing(ICRAC-2023)",
-      file: "/assets/Certificates/ICRAC-2023.pdf",
+      file: process.env.PUBLIC_URL +"/assets/Certificates/ICRAC-2023.pdf",
     },
     {
       title: "Volunteering in QRIUZBEEZ",
-      file: "/assets/Certificates/Qruizbeez.pdf",
+      file: process.env.PUBLIC_URL +"/assets/Certificates/Qruizbeez.pdf",
     },
     {
       title: "Introduction to Psychology (NPTEL)",
-      file: "/assets/Certificates/Introduction_to_Psychology.pdf",
+      file: process.env.PUBLIC_URL +"/assets/Certificates/Introduction_to_Psychology.pdf",
     },
     {
       title: "Hands-on Artificial Intelligence with TensorFlow",
-      file: "assets/Certificates/Hands-on_AI.pdf"
+      file: process.env.PUBLIC_URL +"assets/Certificates/Hands-on_AI.pdf"
     }
   ];
 
