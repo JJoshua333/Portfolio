@@ -50,17 +50,15 @@ function Certificates() {
                 <h3>{cert.title}</h3>
                 <p>Issued by: Authorized Institute</p>
               </div>
-               <button
-              onClick={() =>
-                window.open(
-                  `${process.env.PUBLIC_URL}/assets/Certificates/${cert.file}`,
-                  "_blank"
-                )
-              }
-            >
-              Download
-            </button>
-            </div>
+            <a
+              href={`${process.env.PUBLIC_URL}/assets/Certificates/${cert.file}`}
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+                Download
+              </a>
+                </div>
           ))}
         </div>
       </div>
